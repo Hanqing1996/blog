@@ -554,6 +554,24 @@ from score as a right join course as b
 on a.课程号=b.课程号
 group by a.课程号
 ```
+#### 自增字段
+* 在创建表时设置主键为自增类型
+```
+CREATE TABLE test
+(
+id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+username VARCHAR(15) NOT NULL
+) AUTO_INCREMENT = 100;
+```
+* 设置表的某个已有字段为自增类型
+```
+alter table asset_varity modify id int auto_increment
+```
+* 修改自增字段的初始值
+```
+alter table asset_type AUTO_INCREMENT=0;
+```
+
 #### 事务的ACID特点
 以银行账户转账为例
 ```
@@ -604,12 +622,50 @@ public static bool ExcuteTransactionSQL(List<string> strSQL)
             }
         }
 ```
+#### 索引
+[参考](https://www.jianshu.com/p/2b541c028157)
+* 
+
 
 #### 提高查询性能思路
+注意外键的作用只是实现约束和表关联,不起到提高查询性能的作用
 * 把部分数据读入内存来计算(访问磁盘的成本大概是访问内存的十万倍左右)
 * 使用索引
 
 
+#### pymysql
+* sql语句,注意导入csv格式表格时,表格不需要包括id字段
+```
+sql='''CREATE TABLE test 
+(
+date DATETIME NOT NULL,
+price DECIMAL(16,3) NOT NULL,  
+asset_varity INT NOT NULL,  
+id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT
+) AUTO_INCREMENT = 0;'''
+
+```
+* 事务
+```
+sql = "SELECT * FROM EMPLOYEE \
+       WHERE INCOME > %s" % (1000)
+try:
+   # 执行SQL语句
+   cursor.execute(sql)
+   # 获取所有记录列表
+   results = cursor.fetchall()
+   for row in results:
+      fname = row[0]
+      lname = row[1]
+      age = row[2]
+      sex = row[3]
+      income = row[4]
+       # 打印结果
+      print ("fname=%s,lname=%s,age=%s,sex=%s,income=%s" % \
+             (fname, lname, age, sex, income ))
+except:
+   print ("Error: unable to fetch data")
+```
  
 
 
