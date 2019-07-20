@@ -554,9 +554,56 @@ from score as a right join course as b
 on a.课程号=b.课程号
 group by a.课程号
 ```
+#### 事务的ACID特点
+以银行账户转账为例
+```
+START TRANSACTION;
+SELECT balance FROM checking WHERE customer_id = 10233276;
+UPDATE checking SET balance = balance - 200.00 WHERE customer_id = 10233276;
+UPDATE savings SET balance = balance + 200.00 WHERE customer_id = 10233276;
+COMMIT;
+```
+* 原子性(Atomicity)：要么完全提交（10233276的checking余额减少200，savings 的余额增加200），要么完全回滚（两个表的余额都不发生变化）
+* 一致性(Consistency)：这个例子的一致性体现在 200元不会因为数据库系统运行到第3行之后，第4行之前时崩溃而不翼而飞，因为事务还没有提交。
+* 隔离性(Isolation)：允许在一个事务中的操作语句会与其他事务的语句隔离开，比如事务A运行到第3行之后，第4行之前，此时事务B去查询checking余额时，它仍然能够看到在事务A中被减去的200元（账户钱不变），因为事务A和B是彼此隔离的。在事务A提交之前，事务B观察不到数据的改变。
+* 持久性(Durability)：一旦事务提交，则其所做的修改就会永久保存到数据库中。此时即使系统崩溃，修改的数据也不会丢失。
 
-
-
+#### 事务的启动,提交,回滚
+```
+public static bool ExcuteTransactionSQL(List<string> strSQL)
+        {
+            using (MySqlConnection conn = new MySqlConnection(strConn))
+            {
+                conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction(); // 启动
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.Transaction = transaction;
+                try
+                {
+                    for (int n = 0; n < strSQL.Count; n++)
+                    {
+                        string strsql = strSQL[n];
+                        if (strsql.Trim().Length > 1)
+                        {
+                            cmd.CommandText = strsql;
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    cmd.ExecuteNonQuery();
+                    transaction.Commit(); // 成功则提交
+                    conn.Close();
+                    return true;
+                }
+                catch
+                {
+                    transaction.Rollback(); //失败则回滚
+                    conn.Close();
+                    return false;
+                }
+            }
+        }
+```
 
 
 
