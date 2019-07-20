@@ -605,6 +605,9 @@ public static bool ExcuteTransactionSQL(List<string> strSQL)
         }
 ```
 
+#### 提高查询性能思路
+* 把部分数据读入内存来计算(访问磁盘的成本大概是访问内存的十万倍左右)
+* 使用索引
 
 
  
