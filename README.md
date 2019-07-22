@@ -14,6 +14,7 @@
 * [去除绿色warning波浪线](https://blog.csdn.net/xiemanr/article/details/72583718)
 * 字符替换：Ctrl+R
 * [如何从vs code上传项目至Github](https://www.jianshu.com/p/154322554d9d)
+* [代码整体左移或右移](https://blog.csdn.net/yihaizhiyan/article/details/39529659)
 
 #### linux学习
 * 主目录
