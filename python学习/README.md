@@ -24,3 +24,5 @@ jupyter notebook
 #### 注释
 [注释规范](https://www.runoob.com/python3/python3-comment.html)
 
+#### @property
+* [property的作用](https://codingpy.com/article/python-properties-refactoring/)
