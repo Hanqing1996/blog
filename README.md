@@ -17,7 +17,11 @@
 * [代码整体左移或右移](https://blog.csdn.net/yihaizhiyan/article/details/39529659)
 * md预览:ctrl+shift+v
 
+#### vim
+* [vi编辑模式中按方向键变ABCD的解决方法](https://blog.csdn.net/leem1986/article/details/80100804)
+
 #### linux学习
+那个，本机没有Desktop,只有桌面
 * 主目录
 > 第一次登陆终端时的工作目录将被设置为主目录。在本机中为home/zhq。注意终端中当前工作目录为主目录和根目录时不显示
 * 根目录
@@ -36,7 +40,8 @@
 > 复制文件河目录
 * 进入以lin开头的文件
 > cd lin*
-* 
+* 打开当前目录子目录
+> gnome-open .
 
 
 
