@@ -16,6 +16,7 @@
 * [如何从vs code上传项目至Github](https://www.jianshu.com/p/154322554d9d)
 * [代码整体左移或右移](https://blog.csdn.net/yihaizhiyan/article/details/39529659)
 * md预览:ctrl+shift+v
+* [在vscode添加python运行终端run code](https://blog.csdn.net/qq_36770306/article/details/83782451)
 
 #### vim
 * [vi编辑模式中按方向键变ABCD的解决方法](https://blog.csdn.net/leem1986/article/details/80100804)
