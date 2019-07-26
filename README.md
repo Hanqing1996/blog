@@ -17,6 +17,7 @@
 * [代码整体左移或右移](https://blog.csdn.net/yihaizhiyan/article/details/39529659)
 * md预览:ctrl+shift+v
 * [在vscode添加python运行终端run code](https://blog.csdn.net/qq_36770306/article/details/83782451)
+* [打开终端](https://blog.csdn.net/MengRui2333/article/details/82707948)
 
 #### vim
 * [vi编辑模式中按方向键变ABCD的解决方法](https://blog.csdn.net/leem1986/article/details/80100804)
