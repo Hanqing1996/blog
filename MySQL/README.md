@@ -32,6 +32,16 @@
 insert into student (学号,姓名,出生日期,性别)
 values('0001','猴子','1989-01-01','男');
 ```
+* update
+```
+更新了员工编号1056的姓氏和电子邮件列：
+UPDATE employees 
+SET 
+    lastname = 'Hill',
+    email = 'mary.hill@yiibai.com'
+WHERE
+    employeeNumber = 1056;
+```
 * 查询指定列
 ```
 select 姓名,性别
