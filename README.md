@@ -45,6 +45,8 @@
 > cd lin*
 * 打开当前目录子目录
 > gnome-open .
+* 创建文件
+> touch .gitignore
 
 
 
