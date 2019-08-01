@@ -15,5 +15,5 @@
 > pull：将针对远程仓库所做的修改下拉至远程仓库
 
 > commit：push、pull的前置操作
-
-
+#### issues
+* [删除github上的编辑器配置文件(.idea,.vscode等)，并在push时忽略配置文件](https://blog.csdn.net/leorx01/article/details/66968707)
