@@ -36,6 +36,8 @@
 > 切换到根目录下的home目录
 * cd ..
 > 切换至当前工作目录的父目录
+cd -
+> 回到上一个工作目录(可能父级，可能子级)
 * cd ./zhq
 > 切换至当前工作目录的子目录zhq,注意./常被省略
 * ls
@@ -48,7 +50,12 @@
 > gnome-open .
 * 创建文件
 > touch .gitignore
-
+* 为命令创建别名[解决Linux系统在设置alias命令重启后失效的问题](https://blog.csdn.net/qianfu111/article/details/45221131)
+> alias zz='. ~/.zshrc'
+* 删除别名
+> unalias zz
+* 编辑bashrc文件
+> vim ~/.bashrc
 
 
 
