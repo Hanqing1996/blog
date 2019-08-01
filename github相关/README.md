@@ -15,5 +15,13 @@
 > pull：将针对远程仓库所做的修改下拉至远程仓库
 
 > commit：push、pull的前置操作
-#### issues
-* [删除github上的编辑器配置文件(.idea,.vscode等)，并在push时忽略配置文件](https://blog.csdn.net/leorx01/article/details/66968707)
+#### 删除github上的编辑器配置文件(.idea,.vscode等)，并在push时忽略配置文件
+* [参考](https://blog.csdn.net/leorx01/article/details/66968707)
+* 流程(首先pull一下)
+1. 创建.gitignore文件
+2. 将.vscode文件移入.gitignore文件(可通过插件ignore "g" it实现)
+3. 在本地提交的缓存区中移除.vscode(注意本地文件夹中仍有.vscode文件,未删除也不可删除)
+```
+git rm --cached -r .vscode
+```
+3. commit,push
