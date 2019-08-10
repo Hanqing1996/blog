@@ -20,6 +20,7 @@
 * [打开终端](https://blog.csdn.net/MengRui2333/article/details/82707948)
 * [设置断点，关键是将【program】字段的值修改为自己程序的入口文件](https://www.jianshu.com/p/dfa9595d74bf)
 * [插件：JavaScript (ES6) code snippets的快捷键](https://www.jianshu.com/p/c56ea43b2b34)
+* vscode选中相同内容:ctrl+shift+L
 
 #### vim
 * [vi编辑模式中按方向键变ABCD的解决方法](https://blog.csdn.net/leem1986/article/details/80100804)
