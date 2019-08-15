@@ -7,6 +7,9 @@
 #### linux下安装软件
 * [安装ss](https://github.com/Shadowsocks-Wiki/shadowsocks/blob/master/6-linux-setup-guide-cn.md)
 
+#### [ubuntu卸载Chromium](https://www.jianshu.com/p/3d4c4d415442)
+
+
 ### vs code配置
 * [去除vscode编辑器pylink绿色波浪线](https://www.jianshu.com/p/6a125a2ae7f2)
 * [快捷键设置](https://jingyan.baidu.com/article/9faa7231ef1383473c28cb12.html)
