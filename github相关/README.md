@@ -21,7 +21,7 @@
 1. 创建.gitignore文件
 2. 将.vscode文件移入.gitignore文件(可通过插件ignore "g" it实现)，用于设置下次提交时忽略.vscode文件
 3. 在缓存区中移除.vscode(注意本地文件夹中仍有.vscode文件,未删除也不可删除)
-这一步的作用是删除远程仓库(即github上)的.vscode文件
+这一步的作用是删除远程仓库(即github上)的.vscode文件,node_modules同理
 ```
 git rm --cached -r .vscode
 ```
