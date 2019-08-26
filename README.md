@@ -61,6 +61,8 @@ cd -
 > unalias zz
 * 编辑bashrc文件
 > vim ~/.bashrc
+* 在当前目录下创建package.json文件
+> npm init -y
 
 
 
