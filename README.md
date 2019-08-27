@@ -32,6 +32,23 @@ git config  credential.helper store
 
 #### vim
 * [vi编辑模式中按方向键变ABCD的解决方法](https://blog.csdn.net/leem1986/article/details/80100804)
+* [vim /etc/profile 写入时 出现 E121:无法打开并写入文件解决方案](https://blog.csdn.net/cuiyaoqiang/article/details/78967694)
+* 启动vim
+```
+vi /a.text
+```
+* 进入编辑模式
+```
+按i键
+```
+* 退出编辑模式
+```
+按esc键
+```
+* 保存文件并推出vim
+```
+:wq
+```
 
 #### linux学习
 那个，本机没有Desktop,只有桌面
