@@ -69,5 +69,8 @@ cd -
 > npm init -y
 * [如何取消一个目录的git初始化](https://segmentfault.com/q/1010000006717152)
 > rm -rf .git
-
+* 在linux中,80端口是不能被普通用户使用的，要使用必须加sudo
+```
+sudo node server.js 80
+```
 
