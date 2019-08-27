@@ -13,6 +13,10 @@
 ### vs code配置
 * [去除vscode编辑器pylink绿色波浪线](https://www.jianshu.com/p/6a125a2ae7f2)
 * [快捷键设置](https://jingyan.baidu.com/article/9faa7231ef1383473c28cb12.html)
+* git免密码
+```
+git config  credential.helper store     
+```
 ### pycharm配置
 * [去除绿色warning波浪线](https://blog.csdn.net/xiemanr/article/details/72583718)
 * 字符替换：Ctrl+R
