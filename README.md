@@ -90,4 +90,5 @@ cd -
 ```
 sudo node server.js 80
 ```
+* [ubuntu录制gif](https://jingyan.baidu.com/article/15622f24239a43fdfcbea53e.html)
 
