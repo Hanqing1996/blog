@@ -91,4 +91,7 @@ cd -
 sudo node server.js 80
 ```
 * [ubuntu录制gif](https://jingyan.baidu.com/article/15622f24239a43fdfcbea53e.html)
-
+* 命令行清屏(命令历史记录不会清除，仍能通过方向键访问)
+```
+clear
+```
