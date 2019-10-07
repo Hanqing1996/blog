@@ -57,6 +57,8 @@ vi /a.text
   * 展示可行的git操作
 3. 修改快捷键
   * File->Settings->Keymap->搜索vcs  
+4. 必要的设置
+ * Settings->搜索unsign->Allow打钩
 
 
 #### linux学习
