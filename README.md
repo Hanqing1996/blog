@@ -50,6 +50,15 @@ vi /a.text
 :wq
 ```
 
+#### webstorm
+1. shift+shift(注意必须在英文模式下)t
+  * 打开快捷键搜索框
+2. shift+shift->vcs
+  * 展示可行的git操作
+3. 修改快捷键
+  * File->Settings->Keymap->搜索vcs  
+
+
 #### linux学习
 那个，本机没有Desktop,只有桌面
 * 主目录
