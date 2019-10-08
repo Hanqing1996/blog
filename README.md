@@ -51,8 +51,9 @@ vi /a.text
 ```
 
 #### webstorm
-1. shift+shift(注意必须在英文模式下)t
+1. shift+shift(注意必须在zh模式下)t
   * 打开快捷键搜索框
+  * 查询reformat快捷键：在搜索框输入
 2. shift+shift->vcs
   * 展示可行的git操作
 3. 修改快捷键
