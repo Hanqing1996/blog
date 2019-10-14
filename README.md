@@ -60,7 +60,15 @@ vi /a.text
   * File->Settings->Keymap->搜索vcs  
 4. 必要的设置
  * Settings->搜索unsign->Allow打钩
-
+5. css模糊搜索(jsi->justify-content)
+ * Settings->搜索emmet->CSS->第二个选项打钩
+6. Local Histrory：查看本地修改记录
+7. 批量修改作用域内所有变量名
+ * 选中一个，右击 refactor
+8. Button.log 按 Tab 键
+```
+console.log(Button)
+```
 
 #### linux学习
 那个，本机没有Desktop,只有桌面
@@ -103,7 +111,15 @@ cd -
 sudo node server.js 80
 ```
 * [ubuntu录制gif](https://jingyan.baidu.com/article/15622f24239a43fdfcbea53e.html)
+* linux截图
+```
+gnome-screenshot -a
+```
 * 命令行清屏(命令历史记录不会清除，仍能通过方向键访问) 
 ```
 clear
 ```
+* 光标跳至行首
+CTRL+A
+* 光标跳至行尾
+CTRL+E
