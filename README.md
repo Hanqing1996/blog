@@ -69,6 +69,10 @@ vi /a.text
 ```
 console.log(Button)
 ```
+* css 行折叠
+```
+shift+shift->join
+```
 
 #### linux学习
 那个，本机没有Desktop,只有桌面
