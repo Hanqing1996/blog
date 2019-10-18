@@ -71,8 +71,11 @@ console.log(Button)
 ```
 * css 行折叠
 ```
-shift+shift->join
+shift+shift->join line
 ```
+* 避免 reform 后 css 行折叠被破坏
+Settings->Code style->CSS->Other->Keep Single-line blocks
+
 
 #### linux学习
 那个，本机没有Desktop,只有桌面
