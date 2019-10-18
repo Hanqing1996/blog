@@ -32,36 +32,43 @@ git rm --cached -r .vscode
 * 参考
   * [一个年轻人的Git笔记](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
   * [官方文档](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
-1. 查看当前所处分支
+* 查看当前所处分支
 ```
 git branch
 ```
-2. 创建分支（创建分支后不会自动切换到所创建的分支）
+* 创建分支（创建分支后不会自动切换到所创建的分支）
 ```
 git branch testing
 ```
-3. 切换分支
+* 切换分支
 ```
 git checkout testing
 ```
-4. 创建新的分支并切换到新的分支
+* 创建新的分支并切换到新的分支
 ```
 git checkout -b new_branch 
 ```
-5. 从查看当前分支的commit历史
+* 推送本地分支至远程仓库
+```
+git push origin button-and-input:button-and-input
+```
+* 从查看当前分支的commit历史
 ```
 git log
 ```
-6. HEAD -> master, testing 的意思是：HEAD 说当前分支是 master，而且 testing 与 master 指向同一个 commit
-7. 切换至 master 分支，合并iss53分支
+* git log如何退出
+```
+q
+```
+* HEAD -> master, testing 的意思是：HEAD 说当前分支是 master，而且 testing 与 master 指向同一个 commit
+* 切换至 master 分支，合并iss53分支
 ```
 git branch master
 git merge iss53
 ```
-8. 如何解决分支冲突：逻辑上说，这种问题只能由人来裁决
+* 如何解决分支冲突：逻辑上说，这种问题只能由人来裁决
   * git status查看冲突的文件
   * 手动处理去除的内容（git会在merge失败后显示diff）
   * git add 1.js
   * git commit -m"冲突已解决"
   
-
