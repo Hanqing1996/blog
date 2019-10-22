@@ -130,3 +130,9 @@ clear
 CTRL+A
 * 光标跳至行尾
 CTRL+E
+* [ubuntu18.04自带的输入法数字键选择出现数字而不是中文](https://blog.csdn.net/weixin_43377336/article/details/83017857)
+```
+sudo rm -rf ～/.cache/ibus/libpinyin
+```
+
+
