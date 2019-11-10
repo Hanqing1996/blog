@@ -71,4 +71,15 @@ git merge iss53
   * 手动处理去除的内容（git会在merge失败后显示diff）
   * git add 1.js
   * git commit -m"冲突已解决"
+*  在开始新工作前，保存当前进度的正确姿势
+```
+git branch currentVersion // 只创建分支，不切换。currentVersion 相当于副本，保存到当前为止所有信息
+do something // 开始新工作
+git add somefiles
+git commit -m"开始新工作" // 由于是在 master 上提交的，currentVersion 不包含新工作信息
+```
+也就是说，想要保存当前进度，只要新建一个分支。无需其它多余的操作。
+  
+  
+  
   
