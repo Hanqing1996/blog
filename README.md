@@ -69,12 +69,16 @@ vi /a.text
 ```
 console.log(Button)
 ```
-* css 行折叠
+9. css 行折叠
 ```
 shift+shift->join line
 ```
-* 避免 reform 后 css 行折叠被破坏
+10. 避免 reform 后 css 行折叠被破坏
 Settings->Code style->CSS->Other->Keep Single-line blocks
+11. 将所有变量名"toast"改为"currentToast" 
+选中一个，refactor name，然后所有的 toast 都会变成 currentToast
+12. 查找项目中所有 include
+find path ,输入 include
 
 
 #### linux学习
