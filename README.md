@@ -79,7 +79,8 @@ Settings->Code style->CSS->Other->Keep Single-line blocks
 选中一个，refactor name，然后所有的 toast 都会变成 currentToast
 12. 查找项目中所有 include
 find path ,输入 include
-
+13. sort:单词按照字典序排列
+需要setting->plugin->安装插件lines sorter
 
 #### linux学习
 那个，本机没有Desktop,只有桌面
