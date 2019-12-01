@@ -30,7 +30,7 @@ git rm --cached -r .vscode
 
 #### branch
 * 参考
-  * [一个年轻人的Git笔记](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
+  * [一个年轻人的Git笔记](https://www.cnblogs.com/fydeblog/p/9513736.html#2045321468)
   * [官方文档](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
 * 查看当前所处分支
 ```
@@ -79,6 +79,16 @@ git add somefiles
 git commit -m"开始新工作" // 由于是在 master 上提交的，currentVersion 不包含新工作信息
 ```
 也就是说，想要保存当前进度，只要新建一个分支。无需其它多余的操作。
+
+#### 跟踪,暂存区等概念
+* [参考](https://www.cnblogs.com/fydeblog/p/9513736.html#2045321468)
+* git add
+未跟踪的文件(Untracked files)/尚未暂存以备提交的变更： => 要提交的变更(Changes to be committed)
+
+* git　commit
+
+* 您的分支领先 'origin/master' 共 4 个提交
+我 commit 了４次，还没 push 
   
   
   
