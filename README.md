@@ -85,39 +85,70 @@ find path ,输入 include
 #### linux学习
 那个，本机没有Desktop,只有桌面
 * 主目录
-> 第一次登陆终端时的工作目录将被设置为主目录。在本机中为home/zhq。注意终端中当前工作目录为主目录和根目录时不显示
+```
+第一次登陆终端时的工作目录将被设置为主目录。在本机中为home/zhq。注意终端中当前工作目录为主目录和根目录时不显示
+```
 * 根目录
-> 本机根目录为计算机,即bin的父目录
-* pwd
-> 显示当前工作目录
-* cd /home
-> 切换到根目录下的home目录
-* cd ..
-> 切换至当前工作目录的父目录
+```
+本机根目录为计算机,即bin的父目录
+```
+* 显示当前工作目录
+```
+pwd
+```
+* 切换到根目录下的home目录
+```
+cd /home
+```
+* 切换至当前工作目录的父目录
+```
+cd ..
+```
+* 回到上一个工作目录(可能父级，可能子级)
+```
 cd -
-> 回到上一个工作目录(可能父级，可能子级)
-* cd ./zhq
-> 切换至当前工作目录的子目录zhq,注意./常被省略
-* ls
-> 当前目录的文件和目录
-* cp
-> 复制文件河目录
+```
+* 切换至当前工作目录的子目录zhq,注意./常被省略
+```
+cd ./zhq
+```
+* 显示当前目录的文件和目录
+```
+ls
+```
+显示当前目录的文件和目录
 * 进入以lin开头的文件
-> cd lin*
+```
+cd lin*
+```
 * 打开当前目录子目录
-> gnome-open .
+```
+gnome-open
+```
 * 创建文件
-> touch .gitignore
+```
+touch .gitignore
+```
+* 删除dist目录
+```
+rm rf dist
+```
 * 为命令创建别名[解决Linux系统在设置alias命令重启后失效的问题](https://blog.csdn.net/qianfu111/article/details/45221131)
-> alias zz='. ~/.zshrc'
+```
+alias zz='. ~/.zshrc'
+```
 * 删除别名
-> unalias zz
+```
+unalias zz
+```
 * 编辑bashrc文件
-> vim ~/.bashrc
-* 在当前目录下创建package.json文件
-> npm init -y
+```
+vim ~/.bashrc
+```
 * [如何取消一个目录的git初始化](https://segmentfault.com/q/1010000006717152)
-> rm -rf .git
+```
+rm -rf .git
+```
 * 在linux中,80端口是不能被普通用户使用的，要使用必须加sudo
 ```
 sudo node server.js 80
