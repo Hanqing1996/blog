@@ -115,5 +115,5 @@ $  git push otherusersorigin zhq:zhq
 ```
 4. 之后push只需要
 ```
-git push otherusersorigin
+git push otherusersorigin zhq:zhq
 ```
