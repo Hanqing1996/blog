@@ -89,7 +89,31 @@ git commit -m"开始新工作" // 由于是在 master 上提交的，currentVers
 
 * 您的分支领先 'origin/master' 共 4 个提交
 我 commit 了４次，还没 push 
-  
-  
-  
-  
+
+#### 把代码提交到其他用户的仓库的某一分支
+1. 添加远程仓库 
+```
+git remote add otherusersorigin https://github.com/user2/user2-project.git
+```
+ * 删除远程仓库
+ ```
+ git remote rm otherusersorigin
+ ```
+ * 查看目前所设置的远程仓库
+ ```
+ git remote -v
+ ```
+2. 创建并切换分支
+```
+git branch zhq
+git checkout zhq
+```
+ * [git 错误 fatal: Not a valid object name: 'master'.](https://blog.csdn.net/hengyunabc/article/details/6058145)
+3.推送本地的zhq分支到远程otherusersorigin的zhq分支(没有会自动创建)
+```
+$  git push otherusersorigin zhq:zhq 
+```
+4. 之后push只需要
+```
+git push otherusersorigin
+```
