@@ -1,4 +1,7 @@
 # blog个人学习博客
+
+#### [win10远程计算机或设备将不接受连接](https://zhidao.baidu.com/question/588910381131966685.html)
+
 ### 如何安装linux系统
 * [虚拟机安装](https://xiedaimala.com/tasks/11ad5683-7e18-4883-879d-8425e6a6ceb7video_tutorials/7e65ef68-50e1-49a8-9c44-7f9b2772d0ae)
 #### 单系统安装linux
