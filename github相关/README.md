@@ -32,6 +32,9 @@ git rm --cached -r .vscode
 * 参考
   * [一个年轻人的Git笔记](https://www.cnblogs.com/fydeblog/p/9513736.html#2045321468)
   * [官方文档](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
+* 一个关于master的大坑
+master分支在第一次add和commit前是不会创建的。所以git init后无法直接创建新分支，必须先在master进行一次add和commit。
+* 在 branch_A 进行 commit 后，如果创建并切换至 branch_B,在 git bash 中是看不到待 add 的文件的。这是因为 branch_B 是在 branch_A 进行 commit 后创建的，是 branch_A 进度的一个副本。
 * 查看当前所处分支
 ```
 git branch
