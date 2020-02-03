@@ -123,3 +123,11 @@ $  git push otherusersorigin zhq:zhq
 ```
 git push otherusersorigin zhq:zhq
 ```
+
+#### 已有远程仓库，建立本地仓库
+> clone:拉取远程仓库数据到本地，并自动建立与远程仓库建立联系
+```
+// 该命令将在当前目录下生成JavaScript-advance文件夹
+git clone https://github.com/Hanqing1996/JavaScript-advance.git
+```
+此时，JavaScript-advance已经是一个远程仓库了，我们可以随意的add,commit,push
