@@ -5,6 +5,8 @@
 [git加速](https://jscode.me/t/topic/789)<br>
 [github桌面版下载（图形界面代替命令行）](https://desktop.github.com/)<br>
 [github桌面版使用流程](https://www.jianshu.com/p/6063974849db)<br>
+
+[push 时报错：fatal: The current branch master has no upstream branch.](https://blog.csdn.net/benben_2015/article/details/78803753)
 #### 常用命令
 > clone：将远程仓库复制至本地，适用于远程有仓库、本地无仓库的情况
 
