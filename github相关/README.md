@@ -18,6 +18,30 @@
 
 > commit：push、pull的前置操作
 
+
+#### 在github上下载单个文件夹
+> 比如我要单独下载redux/examples 下的[ counter 目录](https://github.com/reduxjs/redux/tree/master/examples/counter) 
+1. 找一个临时目录，初始化 git
+```
+git init
+```
+2. 配置 sparseCheckout
+```
+git config core.sparseCheckout true
+```
+3. 与目的文件夹所在远程仓库建立联系
+```
+git remote add -f origin https://github.com/reduxjs/redux.git
+```
+4. echo 目的文件路径 >> .git/info/sparse-checkout
+```
+echo examples/counter >> .git/info/sparse-checkout
+```
+5. pull 就完事了
+```
+git pull origin master
+```
+ 
 #### 删除github上的编辑器配置文件(.idea,.vscode等)，并在push时忽略配置文件
 * [参考](https://blog.csdn.net/leorx01/article/details/66968707)
 * 流程(首先pull一下)
