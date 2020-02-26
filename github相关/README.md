@@ -18,6 +18,8 @@
 
 > commit：push、pull的前置操作
 
+#### git clone https://github.com/Hanqing1996/react-wheels.git .
+> 不会在当前目录下创建 react-wheels 文件夹
 
 #### 在github上下载单个文件夹
 > 比如我要单独下载redux/examples 下的[ counter 目录](https://github.com/reduxjs/redux/tree/master/examples/counter) 
