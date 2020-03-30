@@ -98,6 +98,10 @@ const x: React.FunctionComponent = () => {
 
 export default x  
 ```
+15. Add Selection for next Occurrence
+查找并选中下一个当前选中变量
+16. Select All Occurrences
+查找并选中所有当前选中变量
 
 
 #### linux学习
