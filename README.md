@@ -104,6 +104,15 @@ export default x
 查找并选中所有当前选中变量
 
 
+#### IDEA 调试
+* [参考](https://blog.csdn.net/qq_27093465/article/details/64124330)
+* step into
+执行下一句
+* step out
+在 step into 后，可能进入某个方法的具体函数详情，这时点击 step out 就可以跳出详情，直接执行下一句，
+* run to cursor
+用于跳过循环
+
 #### linux学习
 那个，本机没有Desktop,只有桌面
 * 主目录
