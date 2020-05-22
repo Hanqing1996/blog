@@ -86,7 +86,7 @@ find path ,输入 include
 需要setting->plugin->安装插件lines sorter
 14. 模板
 > 以 .ts 为例
-Settings->File and Code Templates ->TypeScript JSX File
+Settings->File and Code Templates ->TypeScript JSX File（模板可以自动添加，比如egg-service）
 ```
 import React from 'react'
 
