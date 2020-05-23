@@ -201,5 +201,5 @@ CTRL+E
 ```
 sudo rm -rf ～/.cache/ibus/libpinyin
 ```
-
-
+* ps aux 查看当前正在运行的进程
+* ps aux | grep node 只查看与 node 相关的进程
