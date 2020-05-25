@@ -205,3 +205,5 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * ps aux | grep node 只查看与 node 相关的进程
 * tail hhh.txt 查看 hhh.txt 的末尾内容
 * tail -f hhh.txt 监控 hhh.txt 的末尾内容
+* CRRL+C:中断
+* CRRL+D:退出
