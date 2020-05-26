@@ -207,3 +207,4 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * tail -f hhh.txt 监控 hhh.txt 的末尾内容
 * CRRL+C:中断
 * CRRL+D:退出
+* exit:退出(比如 mysql)
