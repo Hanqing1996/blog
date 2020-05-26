@@ -211,3 +211,5 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * tar cvf ./koa-server.tar ./koa-server:将 koa-server 下文件打包成 koa-server.tar
 * tar xvf koa-server.tar:解压
 * find / -name "my.cnf"
+* sudo lsof -i:端口号，查看被占用进程的pid
+* sudo kill -9 pid 杀死进程
