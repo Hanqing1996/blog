@@ -212,4 +212,6 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * tar xvf koa-server.tar:解压
 * find / -name "my.cnf"
 * sudo lsof -i:端口号，查看被占用进程的pid
-* sudo kill -9 pid 杀死进程
+* sudo kill -9 pid:杀死进程
+* service mysql start:开启 mysql 进程
+* service mysql stop:中止 mysql 进程
