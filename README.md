@@ -208,3 +208,6 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * CRRL+C:中断
 * CRRL+D:退出
 * exit:退出(比如 mysql)
+* tar cvf ./koa-server.tar ./koa-server:将 koa-server 下文件打包成 koa-server.tar
+* tar xvf koa-server.tar:解压
+* find / -name "my.cnf"
