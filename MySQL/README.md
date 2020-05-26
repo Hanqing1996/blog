@@ -18,9 +18,13 @@
 ```
 show databases;
 ```
+* 添加数据库
+```
+create database koa_mysql_server;
+```
 * 选中某个 database
 ```
-use koa_mysql_server
+use koa_mysql_server;
 ```
 * 展示 database 下所有 table
 ```
