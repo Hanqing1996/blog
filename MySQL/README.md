@@ -13,6 +13,24 @@
 * select A,B,C -- A,B,C为查询结果中的各列
 * where语句中不能使用汇总函数:'where 成绩>avg(成绩)'会报错
 
+#### 基本操作
+* 展示所有 database
+```
+show databases;
+```
+* 选中某个 database
+```
+use koa_mysql_server
+```
+* 展示 database 下所有 table
+```
+show tables;
+```
+* 展示 table 数据
+```
+select * from posts;
+```
+
 #### 执行优先级
 
 1. FROM
