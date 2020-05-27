@@ -215,3 +215,4 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * sudo kill -9 pid:杀死进程
 * service mysql start:开启 mysql 进程
 * service mysql stop:中止 mysql 进程
+* ls -lh:显示当前目录下文件详细信息
