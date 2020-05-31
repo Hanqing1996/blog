@@ -102,6 +102,8 @@ export default x
 查找并选中下一个当前选中变量
 16. Select All Occurrences
 查找并选中所有当前选中变量
+17. 根据 Eslint 格式化全局代码
+Settings->Keymap->搜索 Eslint->设置快捷键
 
 
 #### IDEA 调试
