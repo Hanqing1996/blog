@@ -219,3 +219,4 @@ sudo rm -rf ～/.cache/ibus/libpinyin
 * service mysql stop:中止 mysql 进程
 * ls -lh:显示当前目录下文件详细信息
 * ls | grep js:list 当前目录文件，把结果交给 grep 命令，按行筛选出拓展名是 js 的内容
+* "file is read only"解决方法：切换到管理员权限 sudo -i
