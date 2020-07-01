@@ -1,5 +1,11 @@
 # blog个人学习博客
 
+#### improve efficiency
+* 选中整行
+> 按Home（定位到行首）然后按Shift+Dnd（行尾） 
+
+
+
 #### [win10远程计算机或设备将不接受连接](https://zhidao.baidu.com/question/588910381131966685.html)
 
 ### 如何安装linux系统
