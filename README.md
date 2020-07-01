@@ -53,7 +53,7 @@ vi /a.text
 :wq
 ```
 
-#### webstorm
+#### webstorm/IDEA
 1. shift+shift(注意必须在zh模式下)t
   * 打开快捷键搜索框
   * 查询reformat快捷键：在搜索框输入
@@ -107,6 +107,7 @@ export default x
 查找并选中所有当前选中变量
 17. 根据 Eslint 格式化全局代码
 Settings->Keymap->搜索 Eslint->设置快捷键
+18. 鉴于 plugins 经常找不到，建议直接[从官网下载](https://blog.csdn.net/qq_38225558/article/details/88351753?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.edu_weight)，很方便
 
 
 #### IDEA 调试
