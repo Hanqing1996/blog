@@ -65,6 +65,9 @@ vi /a.text
  * Settings->搜索unsign->Allow打钩
 5. css模糊搜索(jsi->justify-content)
  * Settings->搜索emmet->CSS->第二个选项打钩
+ ```
+ d:f->display:flex
+ ```
 6. Local Histrory：查看本地修改记录
 7. 批量修改作用域内所有变量名
  * 选中一个，右击 refactor
