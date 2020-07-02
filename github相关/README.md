@@ -159,3 +159,10 @@ git push otherusersorigin zhq:zhq
 git clone https://github.com/Hanqing1996/JavaScript-advance.git
 ```
 此时，JavaScript-advance已经是一个远程仓库了，我们可以随意的add,commit,push
+
+#### git add * 和 git add .
+* 以后 add 都用 git add .
+* [git add * 和 git add . 的区别](https://stackoverflow.com/questions/26042390/git-add-asterisk-vs-git-add-period)
+> git add * 会忽略 .gitignore,.idea 等以 . 开头的文件，而 git add . 会 add 所有文件。但是二者都不会 add .gitggnore 中标记的文件
+ 
+
