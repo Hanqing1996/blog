@@ -3,6 +3,8 @@
 #### improve efficiency
 * 选中整行
 > 按Home（定位到行首）然后按Shift+Dnd（行尾） 
+* 回到上次光标位置(IDEA)
+ctrl+alt+<-
 
 
 
