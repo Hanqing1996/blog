@@ -5,7 +5,7 @@
 > 按Home（定位到行首）然后按Shift+Dnd（行尾） 
 * 回到上次光标位置(IDEA)
 ctrl+alt+<-
-
+* 在进行下一阶段前，将与该阶段无关的文件统统关闭
 
 
 #### [win10远程计算机或设备将不接受连接](https://zhidao.baidu.com/question/588910381131966685.html)
