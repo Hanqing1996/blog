@@ -1,3 +1,69 @@
+## vscode 的 debug
+* parcel 项目
+
+[![0v1R29.png](https://s1.ax1x.com/2020/10/19/0v1R29.png)](https://imgchr.com/i/0v1R29)
+
+launch.json 配置如下
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost",
+        "url": "http://localhost:1234",
+        "webRoot": "${workspaceFolder}",
+        "breakOnLoad": true,
+        "sourceMapPathOverrides": {
+          "../*": "${webRoot}/*"
+        }
+      }
+    ]
+}
+```
+
+
+* node.js 项目
+
+[![0v1JUS.png](https://s1.ax1x.com/2020/10/19/0v1JUS.png)](https://imgchr.com/i/0v1JUS)
+
+launch.json 配置如下
+```json
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Node.js (preview)",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "yarn", // 使用 yarn 启动
+        "runtimeArgs": [
+          "run-script", "start" // 对应 package.json 的 escript
+        ],
+          "port": 9229    //这个端口是调试的端口，不是项目启动的端口
+      }]
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # blog个人学习博客
 
 #### improve efficiency
