@@ -13,6 +13,12 @@
 * select A,B,C -- A,B,C为查询结果中的各列
 * where语句中不能使用汇总函数:'where 成绩>avg(成绩)'会报错
 
+* mysql 的 UTF8 是个坑，创建
+```
+CREATE DATABASE IF NOT EXISTS DATABASE1 DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
+```
+
+
 #### 基本操作
 * 展示所有 database
 ```
@@ -698,23 +704,7 @@ try:
 except:
    print ("Error: unable to fetch data")
 ```
----
-#### 为什么要有“事务”的概念
-
-比如用户评论，必须要做两件事
-
-1. 在`comments`表新增记录
-2. 在 `blogs` 表将对应的 `comment_count`+1
-
-**要求任一 `transaction` 失败（数据库未正确写入），则所有 `transaction` 回撤**
-
-```mysql
-start transaction1 transaction1;
-commit;
-```
-
-
-
+ 
 
 
 
