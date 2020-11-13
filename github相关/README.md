@@ -18,6 +18,9 @@
 
 > commit：push、pull的前置操作
 
+#### git reset --hard HEAD
+撤销自上次 commit 以来的所有变更
+
 #### git clone https://github.com/Hanqing1996/react-wheels.git .
 > . 表示当前目录。意为在当前目录下创建 react-wheels 文件夹
 
