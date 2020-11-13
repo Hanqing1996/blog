@@ -698,7 +698,23 @@ try:
 except:
    print ("Error: unable to fetch data")
 ```
- 
+---
+#### 为什么要有“事务”的概念
+
+比如用户评论，必须要做两件事
+
+1. 在`comments`表新增记录
+2. 在 `blogs` 表将对应的 `comment_count`+1
+
+**要求任一 `transaction` 失败（数据库未正确写入），则所有 `transaction` 回撤**
+
+```mysql
+start transaction1 transaction1;
+commit;
+```
+
+
+
 
 
 
