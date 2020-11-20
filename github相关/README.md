@@ -18,6 +18,11 @@
 
 > commit：push、pull的前置操作
 
+#### clone 指定分支代码
+> clone 分支名为 2.6 的 repo 代码
+```
+git clone -b 2.6 https://github.com/vuejs/vue.git
+```
 #### git reset --hard HEAD
 撤销自上次 commit 以来的所有变更
 
