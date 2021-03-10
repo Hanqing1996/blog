@@ -37,6 +37,28 @@ PMI |正|-|正
 * 各项因子权重
 * 时间单元
 
+---
+#### python 常用代码
+* 读取csv内容，转为DataFrame格式并遍历
+```python
+def getCodeList():
+
+    tmp_lst = []
+    with open('./stocksWeight.csv', 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            tmp_lst.append(row)
+    df = pd.DataFrame(tmp_lst[1:], columns=tmp_lst[0])
+
+    res=[]
+    for index, data in df.iterrows():
+        res.append(data['交易所Exchange'][0].lower()+data['交易所Exchange'][2].lower()+'.'+data['成分券代码Constituent Code'].zfill(6))
+    return  res[:3]
+```
+* 将 DataFrame 内容写入 csv
+```python
+summaryTable.to_csv('./summaryTable/300274_summaryTable.csv',index=False)
+```
 
 
 
