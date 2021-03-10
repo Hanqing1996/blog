@@ -59,6 +59,11 @@ def getCodeList():
 ```python
 summaryTable.to_csv('./summaryTable/300274_summaryTable.csv',index=False)
 ```
-
+* 字符串转日期
+```python
+dateStr='2011-01-02'
+date=datetime.datetime.strptime(originalDateStr, '%Y-%m-%d')
+print(date)
+```
 
 
