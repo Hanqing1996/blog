@@ -65,5 +65,9 @@ dateStr='2011-01-02'
 date=datetime.datetime.strptime(originalDateStr, '%Y-%m-%d')
 print(date)
 ```
-
+* 获取目录下各个文件名
+```python
+for root, dirs, files in os.walk('./CSVdata'):
+    print(files)
+```
 
