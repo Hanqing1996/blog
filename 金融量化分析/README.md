@@ -55,6 +55,14 @@ def getCodeList():
         res.append(data['交易所Exchange'][0].lower()+data['交易所Exchange'][2].lower()+'.'+data['成分券代码Constituent Code'].zfill(6))
     return  res[:3]
 ```
+* 对象转dataframe
+```python
+data = {'Rank':[1, 2, 3, 4, 5],
+       'Language': ['Python', 'Java', 'Javascript',  'C#', 'PHP'],
+       'Share':[29.88, 19.05, 8.17, 7.3, 6.15],
+       'Trend':[4.1, -1.8, 0.1, -0.1, -1.0]}
+df = pd.DataFrame(data)
+```
 * 将 DataFrame 内容写入 csv
 ```python
 summaryTable.to_csv('./summaryTable/300274_summaryTable.csv',index=False)
