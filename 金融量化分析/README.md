@@ -78,4 +78,9 @@ print(date)
 for root, dirs, files in os.walk('./CSVdata'):
     print(files)
 ```
-
+* 【画图】解决 plt 中文显示的问题
+```
+# 这两行代码解决 plt 中文显示的问题
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus'] = False
+```
