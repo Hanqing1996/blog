@@ -84,3 +84,18 @@ for root, dirs, files in os.walk('./CSVdata'):
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 ```
+* 循环错误处理
+```python
+arr=[-2,-1,0,1,2,3]
+res=[]
+error=[]
+for data in arr:
+    try:
+        res.append(10/data)
+    except Exception as e:
+        error.append(data)
+        pass
+    continue
+print(res)
+print(error)
+```
